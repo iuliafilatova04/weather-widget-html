@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>weather widget</title>
+    <style>
+        .weather-widget {
+            display: block;
+            width: 100px;
+            height: 120px;
+            text-decoration: none;
+            font-family: Arial;
+            color: #567;
+        }
+        .weather-widget--icon {
+            width: 100px;
+            height: 100px;
+            border-radius: 5px;
+
+            background-color: rgb(7, 73, 73);
+            background-image: radial-gradient(
+                circle at top right,
+                white,
+                yellow,
+                transparent 40%
+                );
+        }
+        .weather-widget--temp {
+            padding-top: 50px;
+            padding-left: 10px;
+            color: yellow;
+        }
+        .weather-widget--day {
+            padding-left: 10px;
+            color: white;
+        }
+        .weather-widget--title {
+            text-align: center;
+            margin-top: 3px;
+            margin-bottom: 3px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <a class="weather-widget" href="#">
+        <div class="weather-widget--icon">
+            <div class="weather-widget--temp">30°C</div>
+            <div class="weather-widget--day">Mo</div>
+        </div>
+        <h3 class="weather-widget--title">Weather</h3>
+    </a>
+    
+</body>
+</html>
